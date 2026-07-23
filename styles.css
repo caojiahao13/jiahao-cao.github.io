@@ -236,7 +236,7 @@ h2 {
   width: min(240px, 34vw);
   aspect-ratio: 896 / 1195;
   background: url("assets/Birds_meme.png") center / contain no-repeat;
-  opacity: 0.12;
+  opacity: 0.28;
   pointer-events: none;
 }
 
@@ -382,6 +382,6 @@ h2 {
 
   .research-section::after {
     width: 150px;
-    opacity: 0.08;
+    opacity: 0.18;
   }
 }
