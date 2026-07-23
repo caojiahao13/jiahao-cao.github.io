@@ -169,8 +169,10 @@ h2 {
   color: #ffffff;
 }
 
-.research-panel {
+.profile-panel {
   align-self: center;
+  display: grid;
+  gap: 24px;
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -179,17 +181,17 @@ h2 {
     var(--wash);
 }
 
-.research-visual {
+.profile-photo {
   display: block;
-  width: 100%;
-  aspect-ratio: 1200 / 760;
-  margin-bottom: 22px;
+  width: min(190px, 62vw);
+  aspect-ratio: 334 / 594;
+  justify-self: center;
   border: 1px solid var(--line);
   border-radius: 6px;
   object-fit: cover;
 }
 
-.research-panel ul {
+.profile-panel ul {
   display: grid;
   gap: 14px;
   margin: 0;
@@ -197,7 +199,7 @@ h2 {
   list-style: none;
 }
 
-.research-panel li {
+.profile-panel li {
   padding-left: 18px;
   border-left: 3px solid rgba(31, 111, 104, 0.35);
   color: var(--ink);
@@ -220,6 +222,27 @@ h2 {
   margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.research-section {
+  position: relative;
+}
+
+.research-section::after {
+  content: "";
+  position: absolute;
+  right: clamp(18px, 5vw, 56px);
+  bottom: clamp(20px, 5vw, 46px);
+  width: min(240px, 34vw);
+  aspect-ratio: 896 / 1195;
+  background: url("assets/Birds_meme.png") center / contain no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.research-section .section-content {
+  position: relative;
+  z-index: 1;
 }
 
 .split,
@@ -353,7 +376,12 @@ h2 {
     width: 100%;
   }
 
-  .research-panel {
+  .profile-panel {
     padding: 22px;
+  }
+
+  .research-section::after {
+    width: 150px;
+    opacity: 0.08;
   }
 }
