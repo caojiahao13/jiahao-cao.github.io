@@ -224,32 +224,27 @@ h2 {
   font-size: 1.05rem;
 }
 
-.research-section {
-  position: relative;
-}
-
-.research-section::after {
-  content: "";
-  position: absolute;
-  right: clamp(18px, 5vw, 56px);
-  bottom: clamp(20px, 5vw, 46px);
-  width: min(240px, 34vw);
-  aspect-ratio: 896 / 1195;
-  background: url("assets/Birds_meme.png") center / contain no-repeat;
-  opacity: 0.28;
-  pointer-events: none;
-}
-
-.research-section .section-content {
-  position: relative;
-  z-index: 1;
-}
-
 .split,
 .columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(26px, 5vw, 56px);
+}
+
+.meme-figure {
+  max-width: 320px;
+  margin: 34px 0 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.meme-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.95;
 }
 
 .clean-list,
@@ -378,10 +373,5 @@ h2 {
 
   .profile-panel {
     padding: 22px;
-  }
-
-  .research-section::after {
-    width: 150px;
-    opacity: 0.18;
   }
 }
