@@ -2,3 +2,8 @@
 Personal_docs/
 Reference/
 Figures/
+*.aux
+*.log
+*.out
+*.synctex.gz
+/CV.pdf
