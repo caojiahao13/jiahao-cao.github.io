@@ -224,6 +224,16 @@ h2 {
   font-size: 1.05rem;
 }
 
+.about-list {
+  display: grid;
+  gap: 9px;
+  max-width: 850px;
+  margin: 16px 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .split,
 .columns {
   display: grid;
