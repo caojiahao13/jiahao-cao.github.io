@@ -189,6 +189,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 6px;
   object-fit: cover;
+  object-position: 62% center;
 }
 
 .profile-panel ul {
