@@ -242,22 +242,6 @@ h2 {
   gap: clamp(26px, 5vw, 56px);
 }
 
-.meme-figure {
-  max-width: 320px;
-  margin: 34px 0 0;
-  padding: 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: #ffffff;
-}
-
-.meme-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: 0.95;
-}
-
 .clean-list,
 .timeline {
   margin: 0;
